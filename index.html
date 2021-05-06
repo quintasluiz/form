@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Genres of Music - Survey Form</h1>
+        <p id="description"><em>Thank you for taking the time to help us improve the plataform</em></p>
+    </header>
+    <main>
+        
+
+        <form id="survey-form">
+
+            <label for="name" id="name-label" >Name:</label>
+            <input type="text"  id="name"  placeholder="Enter your name" required class="input-padrao">
+            <br>
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" placeholder="anonymous@gmail.com" required class="input-padrao">
+            <br>
+            <label for="number" id="number-label">Age:</label>
+            <input type="number" id="number" placeholder="Age" min="2" max="3" class="input-padrao">
+            <br>
+            <p>What is your favorite genres of music?</p>
+            <select name="music" id="dropdown">
+                <option value="" disabled selected >Select your option</option>
+                <option value="pop">Pop</option>
+                <option value="rock">Rock</option>
+                <option value="country">Country</option>
+                <option value="hip-hop">Hip-Hop</option>
+                <option value="k-pop">K-pop</option>
+                <option value="eletronic">Eletronic</option>
+                <option value="Other">Other</option>
+            </select>
+            <br>
+
+            <div>
+                <p class="subtitle">Do you pay for streaming service for music?</p>
+
+                
+                    <label for="definitely"><input type="radio" id="definitely" name="music" value="definitely">Definitely</label>  
+                  
+                    <label for="maybe"><input type="radio" id="maybe" name="music" value="maybe">Maybe</label>  
+                
+                    <label for="not"><input type="radio" id="not" name="music" value="not">Not Sure</label> 
+                   
+                
+            </div>
+
+
+            <div>
+                <p>What's the best streming service for music?</p>
+            <input type="checkbox" id="spotify" name="spotify" value="spotify">
+            <label for="spotify" id="radio">Spotify</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="apple-Music" name="apple-Music" value="apple-music">
+                <label for="apple-music" id="radio">Apple Music</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="tidal" name="tidal" value="tidal">
+                <label for="tidal" id="radio"> Tidal</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="deezer" name="deezer" value="deezer">
+                <label for="deezer" id="radio"> Deezer</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="amazon-music" name="amazon-music" value="amazon-music">
+                <label for="amazon-music" id="radio"> Amazon Music</label>
+            </div>
+            <label for="message" id="message" style="color: white;">Comments:</label>
+            <textarea cols="50" rows="10" id="messagem" class="input-padrao" placeholder="Enter your commenters here"></textarea>
+
+            <button id="submit">Submit</button>
+
+        </form>
+        
+    </main>
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+</body>
+</html>
